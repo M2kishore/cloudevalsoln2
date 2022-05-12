@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>House Info</title>
+		<style>
+			* {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+					Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+					"Helvetica Neue", sans-serif;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			small {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div>
+				<h1 style="font-weight: 400">House Details</h1>
+				<small>* Required</small>
+				<br />
+				<br />
+				<form
+					action="/submit"
+					method="POST"
+					enctype="multipart/form-data"
+				>
+					<label>
+						House No. <small>*</small>
+						<br />
+						<input
+							type="number"
+							name="houseNo"
+							placeholder="Your answer"
+							required
+						/>
+					</label>
+					<br /><br /><br />
+					<label>
+						House Name <small>*</small>
+						<br />
+						<input
+							type="text"
+							name="houseName"
+							placeholder="Your answer"
+							required
+						/>
+					</label>
+					<br /><br /><br />
+					<label>
+						Zipcode <small>*</small>
+						<br />
+						<span style="font-size: 12px"
+							>Zipcode of a city in USA</span
+						>
+						<br />
+						<input
+							type="text"
+							name="zipcode"
+							placeholder="Your answer"
+							required
+						/>
+					</label>
+					<br /><br /><br />
+					<label>
+						House Photo <small>*</small>
+						<br />
+						<br />
+						<input type="file" name="housePhoto" required />
+					</label>
+					<br /><br /><br />
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

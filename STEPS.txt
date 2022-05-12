@@ -1,0 +1,2 @@
+• Download a KEY file from GCP for the service account to upload files to bucket
+• Place that in the following directory ---> "backend/gcpkey/yourfile.json"
